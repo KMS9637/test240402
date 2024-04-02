@@ -1,0 +1,15 @@
+#test {
+    color: blueviolet;
+}
+
+
+h1 {
+    color: blue;
+}
+
+a {
+    color: red;
+    text-decoration: line-through;
+}
+/* 아래의 우선 순위가 높다 */
+/* css파일보다 직접 원본에 쓰는 인라인의 우선 순위가 높다 */
