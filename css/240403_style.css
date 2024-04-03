@@ -2,8 +2,13 @@
   color: blueviolet;
 }
 
-body {
+/* body {
   margin: 0;
+} */
+
+h2 {
+  border-bottom: 1px gray solid;
+  padding: 20px;
 }
 
 h1 {
@@ -11,7 +16,7 @@ h1 {
   font-size: 1.5em;
   text-align: center;
   border-bottom: 1px gray solid;
-  margin: 0;
+  margin: 0px;
 }
 
 /* 순서3, css 파일에서, grid 옵션 작업.  */
@@ -28,13 +33,15 @@ h1 {
 ol {
   border-right: 1px solid gray;
   width: 100px;
-  margin: 0;
+  margin: 0px;
   padding: 20px;
 }
 
 li {
+  margin: 10px;
   padding: 10px;
-}
+  border-bottom: 1px black dotted;
+} 
 
 a {
   color: black;
@@ -42,7 +49,7 @@ a {
 }
 
 #article {
-  padding-left: 20px;
+  padding: 0px;
 }
 
 #active {
@@ -71,6 +78,35 @@ img {
 }
 
 .picture_container {
-  border: 5px black solid;
+  border: 3px black solid;
   overflow: hidden;
 }
+
+/* 미디어 쿼리 테스트 */
+  div {
+    border: 10px solid green;
+    font-size: 60px;
+  }
+
+  /* 800px 이상이면, 조건이 display none */
+  @media(min-width: 800px){
+    div {
+      display: none;
+    }
+  }
+
+  @media (min-width: 800px){
+    body {
+      /* 이미지 추가해보기 */
+      background: url(../coding.jpg) no-repeat fixed;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: 1200px){
+    body {
+      /* 이미지 추가해보기 */
+      background: url(../coding2.jpg) no-repeat fixed;
+      background-size: cover;
+    }
+  }
