@@ -18,6 +18,7 @@ h1 {
 #grid {
   display: grid;
   grid-template-columns: 150px 1fr;
+  border-bottom: 1px gray solid;
 }
 
 #grid ol {
@@ -29,6 +30,10 @@ ol {
   width: 100px;
   margin: 0;
   padding: 20px;
+}
+
+li {
+  padding: 10px;
 }
 
 a {
