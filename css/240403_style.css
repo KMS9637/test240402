@@ -66,5 +66,6 @@ img {
 }
 
 .picture_container {
-  border: 5px pink dotted;
+  border: 5px black solid;
+  overflow: hidden;
 }
