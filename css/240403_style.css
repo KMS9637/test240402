@@ -54,10 +54,16 @@
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
   }
   
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  
+  .picture_container {
+    border: 5px pink dotted ;
   }
