@@ -129,18 +129,3 @@ img {
       grid-template-columns: repeat(1, 1fr);
     }
 }
-/* 가로모드를 위한 스타일 */
-@media(min-width: 971px) {
-  #grid {
-      display: grid;
-  }
-  #grid ol {
-      border-right: 1px gray solid;
-  }
-  h1 {
-      border-bottom: 1px gray solid;
-  }
-  #grid_pictures {
-      grid-template-columns: repeat(3, 1fr);
-  }
-}
