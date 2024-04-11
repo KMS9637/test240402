@@ -4,6 +4,39 @@
 </head>
 
 <body>
+  <!-- == : 데이터의 값만 비교하고, 
+예) "123" == 123 : 참, 
+왼쪽 문자열의 123, 오른쪽 숫자의 123
+
+=== : 데이터의 값과 데이터의 타입도 같이 비교해요. 
+"123" === 123 : 거짓 -->
+  <input id="night_day" type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'night') {
+    target.style.backgroundColor = 'black';
+    target.style.color= 'white';
+    this.value = 'day';
+    var alist = document.querySelectorAll('a');
+        var i = 0;
+        while ( i < alist.length) {
+            alist[i].style.color = 'blue';
+            console.log(alist[i]);
+            i = i + 1 ;
+        }   
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color= 'black';
+    this.value = 'night';   
+    var alist = document.querySelectorAll('a');
+        var i = 0;
+        //for (i=0;i<alist.length;i++)
+        while ( i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            console.log(alist[i]);
+            i = i + 1 ;
+        }
+  }
+  ">
 
   <h1><a href="index.html">WEB</a></h1>
   <div id="grid">
@@ -15,7 +48,7 @@
     </ol>
     <div id="article">
       <h2>CSS란 무엇인가?</h2>
-      <p style="margin-left: 30px;">
+      <p style="margin-top: 40px;">
         Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
         of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology
         of the World Wide Web, alongside HTML and JavaScript.[2]
