@@ -3,32 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mp.css">
+    <script src="./js/mp.js"></script>
     <title>Music</title>
 </head>
 
 <body>
-    <h2>Menu</h2>
+    <a href="mp_main.html">NAME</a>
 
-    <!-- https://deblisher.tistory.com/entry/html%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0-form-label-input -->
-    <div class="login-container">
-        <h2>Login</h2>
-        <form id="login-form">
-          <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-          </div>
-          <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-          </div>
-          <button type="submit">Login</button>
-        </form>
-      </div>
-
+    <button>Login</button>
+    <!-- 자바스크립트로 버튼 활성화 -->
     <button>SignUp</button>
 
+    <h2>Menu</h2>
     <ul>
-        <li><a href="#">메뉴 1</a></li>
+        <li><a href="mp_board.html">감상평 쓰기</a></li>
         <li><a href="#">메뉴 2</a></li>
         <li><a href="#">메뉴 3</a></li>
         <li><a href="#">메뉴 4</a></li>
@@ -37,7 +26,7 @@
     <div id="article">
         <h2>HTML이란 무엇인가?</h2>
    
-        <img src="./coding2.jpg" width = 37%>
+        <img src="./coding2.jpg" width = "560px" height="315px">
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/HG0M_eZduxY" frameborder="0" allowfullscreen></iframe>
 
@@ -52,7 +41,13 @@
     </div>
 </body>
 
-<footer>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 김민수 만듦</span>
+    </div>
+ </footer>
 
-</footer>
 </html>
