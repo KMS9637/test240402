@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/mp.css">
-    <script src="./js/mp.js"></script>
     <title>Music</title>
 </head>
 
 <body>
-    <a href="mp_main.html">NAME</a>
+  <div class="container">
+  <div class="sidebar">
+    <h1><a href="mp_main.html">NAME</a></h1>
 
-    <button>Login</button>
+    <div class="buttons">
+    <button id="login">Login</button>
     <!-- 자바스크립트로 버튼 활성화 -->
-    <button>SignUp</button>
+    <button id="signup">SignUp</button>
+    </div>
 
     <h2>Menu</h2>
     <ul>
@@ -22,14 +25,15 @@
         <li><a href="#">메뉴 3</a></li>
         <li><a href="#">메뉴 4</a></li>
     </ul>
-
+  </div>
+  <div class="content">
     <div id="article">
         <h2>HTML이란 무엇인가?</h2>
-   
+   <p>
         <img src="./coding2.jpg" width = "560px" height="315px">
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/HG0M_eZduxY" frameborder="0" allowfullscreen></iframe>
-
+      </p>
         <p style="margin-left: 30px;">
           HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as
           interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents
@@ -39,6 +43,9 @@
           delineated by tags, written using angle brackets.
         </p>
     </div>
+    </div>
+  </div>
+    <script src="./js/mp.js"></script>
 </body>
 
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
