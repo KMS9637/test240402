@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function(){
       var password = document.getElementById('password').value;
       var password = document.getElementById('email').value;
     
-    
       // 아이디와 비밀번호가 빈 값인지 확인
       if (username.trim() === '' || password.trim() === '' || email.trim()==='') {
         alert('아이디, 비밀번호 혹은 이메일을 확인하세요.');
@@ -80,3 +79,21 @@ document.addEventListener('DOMContentLoaded', function() {
           });
       }
 });
+
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // 부드러운 스크롤 동작
+  });
+}
+
+// 페이지 스크롤 이벤트를 감지하여 버튼을 표시 또는 숨김
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollTopBtn").style.display = "block";
+  } else {
+      document.getElementById("scrollTopBtn").style.display = "none";
+  }
+}
